@@ -1,0 +1,75 @@
+\documentclass[openany]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{IEEEtrantools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{soul}
+\DeclareRobustCommand{\hlred}[1]{{\sethlcolor{BrickRed}\hl{#1}}}
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{IEEEtrantools}
+\numberwithin{equation}{section}
+\usepackage{color}
+\usepackage{xcolor, soul}
+\sethlcolor{yellow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{array}
+\usepackage{calc}
+
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{circuitikz}
+\usepackage{floatrow}
+
+
+\lstset{
+language=C,                % choose the language of the code
+basicstyle=\ttfamily\normalsize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny,      % the size of the fonts that are used for the line-numbers
+stepnumber=0,                   % the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,           % adds a frame around the code
+tabsize=1,
+captionpos=b,           % sets the caption-position to bottom
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,
+numberblanklines=false,
+escapeinside={\%*}{*)}}
+
+
+%\usepackage{pgfplots}
+
+\title{Progetto 1.1 “Analisi Comparativa tra OS161 e altri Sistemi Operativi Open-Source all'Avanguardia per Sistemi Embedded e Computer General Purpose”}
+\author{S308538 - Gaetano Insinna}
+\date{Programmazione di Sistema - a.a. 2023-24}
+
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm}
+
+\usepackage{courier}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[T1]{fontenc}
+
+\renewcommand{\contentsname}{Indice} %Change the name of ToC
+\renewcommand{\lstlistingname}{Code}% Listing -> Code
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+
+\include{Memoria Virtuale/Memoria Virtuale}
+\include{Algoritmi di Scheduling/Algoritmi di Scheduling}
+
+\end{document} 
